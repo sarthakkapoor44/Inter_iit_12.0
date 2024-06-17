@@ -38,7 +38,13 @@ Initial analysis of the data revealed that there are certain missing entries in 
 ### Long Position Entry
   The following conditions must be satisfied in conjunction to open a long position:
 All of these signals in combination give a strong indication of an upwards moving market
-- ** Smoothed RSI>7O
-- ** Volume: Fast SMA > Slow SMA
-- ** Price: Fastest EMA > Fast EMA > Slow EMA
-- ** Aroon Indicator: Aroon Up < Aroon Down
+- **Smoothed** RSI>7O
+- **Volume**: Fast SMA > Slow SMA
+- **Price** : Fastest EMA > Fast EMA > Slow EMA
+- **Aroon Indicator**: Aroon Up < Aroon Down
+### Long Position Exit
+Once the trend loses strength and momentum goes down, the strategy picks up on this and squares off the long position
+The following conditions must be satisfied in conjunction to close a long position:
+- **RSI** < 30
+- **Volatility Index** > **Vol. Index Moving Average**
+As the RSI is now at a very low level, the trend has lost strength and momentum. Additionally since volatility is relatively higher it can indicate a oncoming dip in the price i.e price movement in the opposite direction
