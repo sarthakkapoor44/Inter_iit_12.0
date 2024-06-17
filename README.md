@@ -33,3 +33,12 @@ Initial analysis of the data revealed that there are certain missing entries in 
 ## Technical Indicators
 ![missing_data](https://github.com/sarthakkapoor44/Inter_iit_12.0/blob/main/assets/indicator1.png)
 ![missing_data](https://github.com/sarthakkapoor44/Inter_iit_12.0/blob/main/assets/indicator2.png)
+
+## Entry and Exit Signals
+### Long Position Entry
+  The following conditions must be satisfied in conjunction to open a long position:
+All of these signals in combination give a strong indication of an upwards moving market
+- ** Smoothed RSI>7O
+- ** Volume: Fast SMA > Slow SMA
+- ** Price: Fastest EMA > Fast EMA > Slow EMA
+- ** Aroon Indicator: Aroon Up < Aroon Down
