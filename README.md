@@ -36,9 +36,9 @@ Initial analysis of the data revealed that there are certain missing entries in 
 
 ## Entry and Exit Signals
 ### Long Position Entry
-  The following conditions must be satisfied in conjunction to open a long position:
+The following conditions must be satisfied in conjunction to open a long position:
 All of these signals in combination give a strong indication of an upwards moving market
-- **Smoothed** RSI>7O
+- **Smoothed** RSI>70
 - **Volume**: Fast SMA > Slow SMA
 - **Price** : Fastest EMA > Fast EMA > Slow EMA
 - **Aroon Indicator**: Aroon Up < Aroon Down
@@ -47,4 +47,54 @@ Once the trend loses strength and momentum goes down, the strategy picks up on t
 The following conditions must be satisfied in conjunction to close a long position:
 - **RSI** < 30
 - **Volatility Index** > **Vol. Index Moving Average**
-As the RSI is now at a very low level, the trend has lost strength and momentum. Additionally since volatility is relatively higher it can indicate a oncoming dip in the price i.e price movement in the opposite direction
+As the RSI is now at a very low level, the trend has lost strength and momentum. Additionally since volatility is relatively higher it can indicate a oncoming dip in the price i.e price movement in the opposite direction.
+
+### Short Position Entry
+While the market is bullish there are brief periods of pullbacks and price corrections. These movements are also captured by the strategy by entering short positions
+The following conditions must be satisfied in conjunction to open a short position:
+- **Smoothed RSI**<30
+- **Price**: Fastest EMA < Fast EMA < Slow EMA
+- **VWAP**: Crosses below Fastest EMA of Price
+- **Aroon Indicator**: Aroon Down < Aroon Up
+These signals indicate that the price is likely to experience pullback as the trend is weak and traded volume is also relatively lower.
+
+### Short Position Exit
+The short positions are intended to be held for short periods of time and rely on relatively faster signals
+The following conditions must be satisfied in conjunction to close a short position:
+- **VWAP > Fastest EMA of Price**
+- **Time-based Stop**: If position has been held for longer than 8 hours
+
+## Risk Management Measures
+### Price Level Stop-Losses
+To limit the directional risk of the positions, price level stop-losses have been implemented using the upper channel of 24-hour Highest High (HH) and lower channel of 24-hour Lowest Low (LL)
+- **Long Position - SL of Lowest Low**
+- **Short Position - SL of Highest High**
+### Time-based Stops
+To limit overexposure to the market volatility, time-based stops have been implemented
+- **Long Position** - Maximum holding time is **24 days**
+- **Short Position** - If position is held for more than 8 hours and VWAP > Fastest EMA, then the position is squared off
+
+## Backtesting
+ Created class BacktestResults to take in the signal logs and compute metric)
+- Object-orientedimplementation promotes code modularity
+- Separate methods for
+  - Viewing different results
+  - Data visualizations
+
+## Trade History and Metrics
+![missing_data](https://github.com/sarthakkapoor44/Inter_iit_12.0/blob/main/assets/trade_info.png)
+
+  
+  | Metric                         | Value           | 
+  |--------------------------------|-----------------|
+  | Maximum Trade Duration         | 24 days         |                          
+  | Average Trade Duration         | 6 days 19 hours |                          
+  | Number of Trades               | 59              |                          
+  | Winning Trades                 | 43              |                          
+  | Losing Trades                  | 16              |                          
+  | Win Rate                       | 72.881%         |                          
+  | Number of Long Trades          | 23              |                          
+  | Number of Short Trades         | 36              |       
+
+
+
