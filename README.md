@@ -30,3 +30,6 @@ Initial analysis of the data revealed that there are certain missing entries in 
 
 ![missing_data](https://github.com/sarthakkapoor44/Inter_iit_12.0/blob/main/assets/missing_data)
 
+## Technical Indicators
+![missing_data](https://github.com/sarthakkapoor44/Inter_iit_12.0/blob/main/assets/indicator1.png)
+![missing_data](https://github.com/sarthakkapoor44/Inter_iit_12.0/blob/main/assets/indicator2.png)
