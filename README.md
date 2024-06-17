@@ -115,4 +115,5 @@ Indicates the entry and exit positions for both long and short trades on an inte
   | Benchmark Drawdown             | -81.4%          |    
 
 
+![missing_data](https://github.com/sarthakkapoor44/Inter_iit_12.0/blob/main/assets/logo.png)
 
