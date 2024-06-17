@@ -1,41 +1,32 @@
-# Zelta Labs: Crypto Trading Challenge
 
-## Introduction
-Welcome to the Zelta Labs Crypto Trading Challenge by Team 15. This project focuses on developing a sophisticated algorithmic trading strategy for the cryptocurrency market.
+# Algorthmic Trading Strategy for BTC/USDT
 
-## Strategy Overview
-Our approach involves a long-short trading strategy that leverages technical indicators to identify market trends and momentum for optimal entry and exit points.
+## Market Dynamics
 
-## Technical Indicators Used
-- RSI (Relative Strength Index)
-- EMA (Exponential Moving Average)
-- SMA (Simple Moving Average)
-- VWAP (Volume Weighted Average Price)
-- Aroon Indicator
+An analysis of the cryptocurrency market dynamics led to the understanding that Bitcoin market prices exhibit strong trend-based momentum, which is ideal for algorithmic trading strategies. This momentum particularly in cryptocurrencies can be attributed to factors such as:
 
-## Risk Management
-The strategy incorporates rigorous risk management tactics including:
-- Stop-losses
-- Time-based stops
+- **Constrained attention of investors**
+  
+  As cryptocurrency markets operate 24/7, the continuous trading environment may cause retail investors to miss important developments. Their trading activities typically lag with respect to market news headlines and price changes, allowing momentum-based strategies to exploit this delay.
 
-## Backtesting
-Backtesting was conducted to evaluate the strategy's performance, using various metrics to assess its effectiveness and risk management.
+- **Network Effects**
+  
+  The value and utility of the crypto tokens increases as more users join and develop the blockchain ecosystem. The compounded user growth for these blockchains inherently promotes momentum.
 
-## Results Summary
-Our backtesting results demonstrate the strategy's potential in profitability and efficient risk management in the volatile crypto market.
+## Proposition
 
-## Installation and Usage
+A long-short strategy which aims to capture strong uptrends and make profits in a bullish market.
 
-### Prerequisites
-- Python 3.0 or higher
-### Libraries used:
-- colorama
-- missingno
-- numpy
-- pandas
-- backtesting.py
-- plotly
-- seaborn
-- datetime
-- pandas_ta
+The strategy makes use of:
+- **Technical indicators** which identify the strength of trends and **Momentum** in the market by considering price movements and traded volume.
+
+Risk management measures are also incorporated in the strategy including stop-losses and time-based stops to:
+- **Mitigate position risk** and
+- **Reduce overexposure to market volatility** with respect to time.
+
+## Data Analysis - Missing Values
+
+Initial analysis of the data revealed that there are certain missing entries in the hourly data provided, shown as follows:
+
+![missing_data](https://github.com/sarthakkapoor44/Inter_iit_12.0/blob/main/assets/missing_data)
 
