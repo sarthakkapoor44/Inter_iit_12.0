@@ -96,5 +96,23 @@ To limit overexposure to the market volatility, time-based stops have been imple
   | Number of Long Trades          | 23              |                          
   | Number of Short Trades         | 36              |       
 
+## Equity Curves
+Evolution of the portfolio balance or net profit/loss made by the strategy
+Impact of the strategy on the portfolio when the entire balance at each entry time is invested in the trade (starting balance is $1,000)
+![missing_data](https://github.com/sarthakkapoor44/Inter_iit_12.0/blob/main/assets/compounded.png)
+
+## Trade Positions
+Indicates the entry and exit positions for both long and short trades on an interactive plot which is available in the Python notebook.
+### Long Trade Positions
+![missing_data](https://github.com/sarthakkapoor44/Inter_iit_12.0/blob/main/assets/long_trades)
+### Short Trade Postions
+![missing_data](https://github.com/sarthakkapoor44/Inter_iit_12.0/blob/main/assets/short_trades)
+## Drawdowns
+![missing_data](https://github.com/sarthakkapoor44/Inter_iit_12.0/blob/main/assets/dd.png)
+  | Metric                         | Value           | 
+  |--------------------------------|-----------------|
+  | Maximum Drawdown               | -6.46%          |                          
+  | Benchmark Drawdown             | -81.4%          |    
+
 
 
